@@ -1,0 +1,155 @@
+:root {
+    --clr-primary-soft-blue: hsl(215, 51%, 70%);
+    --clr-primary-cyan: hsl(178, 100%, 50%);
+    --clr-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --clr-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --clr-dark-blue-line: hsl(215, 32%, 27%);
+    --clr-white: #fff;
+
+    --font-size: 18px;
+    --ff-outfit: 'Outfit', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--clr-dark-blue-main-bg);
+    font-size: var(--font-size);
+    font-family: var(--ff-outfit);
+}
+
+.component-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.component-wrapper > .component {
+    background-color: var(--clr-dark-blue-card-bg);
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.component-wrapper > .component > .top-section {
+    height: 350px;
+    position: relative;
+    background-image: url(/images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+
+.component-wrapper > .component > .top-section:hover .icon-wrapper{
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,255,247, .45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 5s;
+}
+
+.component-wrapper > .component > .top-section > .icon-wrapper {
+    display: none;
+}
+
+.component-wrapper > .component > .middle-section {
+    border-bottom: var(--clr-dark-blue-line) 1.5px solid;
+    margin: 1.5rem 0;
+}
+
+.component-wrapper > .component > .middle-section a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.component-wrapper > .component > .middle-section a:hover {
+    color: var(--clr-primary-cyan);
+}
+
+.component-wrapper > .component > .middle-section > .nft-description {
+    color: var(--clr-primary-soft-blue);
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.1rem;
+    margin-bottom: 2rem;
+}
+
+.component-wrapper > .component > .middle-section > .nft-amount-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.component-wrapper > .component > .middle-section > .nft-amount-wrapper > .etherium {
+    display: flex;
+    gap: .75rem;
+    height: 25px;
+    width: 50%;
+}
+
+.component-wrapper > .component > .middle-section > .nft-amount-wrapper > .time-left {
+    display: flex;
+    gap: .75rem;
+    height: 25px;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.component-wrapper > .component > .middle-section > .nft-amount-wrapper > .etherium > .amount {
+    color: var(--clr-primary-cyan);
+    font-weight: 300;
+}
+
+.component-wrapper > .component > .middle-section > .nft-amount-wrapper > .time-left > .days-left {
+    color:var(--clr-primary-soft-blue);
+    font-weight: 300;
+}
+
+.component-wrapper > .component > .bottom-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.component-wrapper > .component > .bottom-section img {
+    border: var(--clr-white) 3px solid;
+    border-radius: 50%;
+    height: 50px;
+
+}
+
+.component-wrapper > .component > .bottom-section > .creator {
+    color: var(--clr-primary-soft-blue);
+    font-weight: 300;
+}
+
+.component-wrapper > .component > .bottom-section a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+.component-wrapper > .component > .bottom-section a:hover {
+    color: var(--clr-primary-cyan);
+}
+
+.component-wrapper > .attribution {
+    color: var(--clr-white);
+}
+
+
